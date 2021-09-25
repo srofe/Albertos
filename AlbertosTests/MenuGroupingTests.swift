@@ -24,9 +24,9 @@ class MenuGroupingTests: XCTestCase {
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 1, "Menu grouping for a menu with items in one category shall have one group.")
         let section = try XCTUnwrap(sections.first)
-        XCTAssertEqual(section.items.count, 2)
-        XCTAssertEqual(section.items.first?.name, "name")
-        XCTAssertEqual(section.items.last?.name, "other name")
+        XCTAssertEqual(section.items.count, 2, "A menu section shall have the number of items that corresponde to the group they are in.")
+        XCTAssertEqual(section.items.first?.name, "name", "A menu section shall contain the items that belong to that section. First item of two.")
+        XCTAssertEqual(section.items.last?.name, "other name", "A menu section shall contain the items that belong to that section. Second item of two.")
     }
 
     func test_MenuWithManyCategories_returnsOneSectionPerCategory() {
@@ -37,9 +37,9 @@ class MenuGroupingTests: XCTestCase {
             MenuItem(category: "desserts", name: "a dessert"),
         ]
         let sections = groupMenuByCategory(menu)
-        XCTAssertEqual(sections.count, 3, "Menu grouping for a menu with items in several categories shall shall return items grouped by those categories.")
-        XCTAssertEqual(sections[safe: 0]?.category, "pastas")
-        XCTAssertEqual(sections[safe: 1]?.category, "drinks")
-        XCTAssertEqual(sections[safe: 2]?.category, "desserts")
+        XCTAssertEqual(sections.count, 3, "Menu grouping for a menu with items in several categories shall return items grouped by those categories.")
+        XCTAssertEqual(sections[safe: 0]?.category, "pastas", "Each menu section shall have a category name corresponding to the cateory of the menu items. First item of three.")
+        XCTAssertEqual(sections[safe: 1]?.category, "drinks", "Each menu section shall have a category name corresponding to the cateory of the menu items. Second item of three.")
+        XCTAssertEqual(sections[safe: 2]?.category, "desserts", "Each menu section shall have a category name corresponding to the cateory of the menu items. Third item of three.")
     }
 }

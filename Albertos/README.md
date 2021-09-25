@@ -24,3 +24,12 @@ these can be stated as:
 group.
 * Menu grouping for a menu with items in several categories _**shall**_ shall 
 return items grouped by those categories. 
+
+While these three requirements correspond to the three tests initially created 
+for the `MenuGroupingTests` class, there are additional requirements which are 
+associted with the additional assertions used:
+
+* A menu section _**shall**_ have the number of items that corresponde to the group they are in.
+* A menu section _**shall**_ contain the items that belong to that section.
+* Menu grouping for a menu with items in several categories _**shall**_ return items grouped by those categories.
+* Each menu section _**shall**_ have a category name corresponding to the cateory of the menu items.
