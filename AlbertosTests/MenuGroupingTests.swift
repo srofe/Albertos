@@ -16,12 +16,16 @@ class MenuGroupingTests: XCTestCase {
         XCTAssertTrue(sections.isEmpty, "Menu grouping for a menu with no items shall have no groups.")
     }
 
-    func test_MenuWithOneCategory_ReturnsOneSection() {
+    func test_MenuWithOneCategory_ReturnsOneSection() throws {
         let menu = [
-            MenuItem(category: "pastas"),
-            MenuItem(category: "pastas")
+            MenuItem(category: "pastas", name: "name"),
+            MenuItem(category: "pastas", name: "other name")
         ]
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 1, "Menu grouping for a menu with items in one category shall have one group.")
+        let section = try XCTUnwrap(sections.first)
+        XCTAssertEqual(section.items.count, 2)
+        XCTAssertEqual(section.items.first?.name, "name")
+        XCTAssertEqual(section.items.last?.name, "other name")
     }
 }
