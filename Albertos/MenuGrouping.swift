@@ -8,5 +8,6 @@
 import Foundation
 
 func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
-    return []
+    guard menu.isEmpty == false else { return [] }
+    return [MenuSection()]
 }

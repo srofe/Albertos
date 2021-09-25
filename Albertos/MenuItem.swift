@@ -7,4 +7,6 @@
 
 import Foundation
 
-struct MenuItem {}
+struct MenuItem {
+    let category: String
+}
