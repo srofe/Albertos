@@ -31,10 +31,10 @@ class MenuGroupingTests: XCTestCase {
 
     func test_MenuWithManyCategories_returnsOneSectionPerCategory() {
         let menu = [
-            MenuItem.fixture(category: "pastas", name: "a pasta"),
-            MenuItem.fixture(category: "drinks", name: "a drink"),
-            MenuItem.fixture(category: "pastas", name: "another pasta"),
-            MenuItem.fixture(category: "desserts", name: "a dessert"),
+            MenuItem.fixture(category: "pastas"),
+            MenuItem.fixture(category: "drinks"),
+            MenuItem.fixture(category: "pastas"),
+            MenuItem.fixture(category: "desserts"),
         ]
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 3, "Menu grouping for a menu with items in several categories shall return items grouped by those categories.")
