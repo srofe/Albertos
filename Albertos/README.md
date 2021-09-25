@@ -15,6 +15,10 @@ Given a collection of menu items, we pass these to a method that will return
 this as a collecton of categories, with each category containing a collection 
 of items.
 
+It is a matter of preference, but I prefer to state the requirements for each 
+test as the message parameter of the assertion. For the three initial tests, 
+these can be stated as:
+
 * Menu grouping for a menu with no items _**shall**_ have no groups.
 * Menu grouping for a menu with items in one category _**shall**_ have one 
 group.

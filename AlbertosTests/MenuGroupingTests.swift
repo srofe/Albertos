@@ -28,4 +28,18 @@ class MenuGroupingTests: XCTestCase {
         XCTAssertEqual(section.items.first?.name, "name")
         XCTAssertEqual(section.items.last?.name, "other name")
     }
+
+    func test_MenuWithManyCategories_returnsOneSectionPerCategory() {
+        let menu = [
+            MenuItem(category: "pastas", name: "a pasta"),
+            MenuItem(category: "drinks", name: "a drink"),
+            MenuItem(category: "pastas", name: "another pasta"),
+            MenuItem(category: "desserts", name: "a dessert"),
+        ]
+        let sections = groupMenuByCategory(menu)
+        XCTAssertEqual(sections.count, 3, "Menu grouping for a menu with items in several categories shall shall return items grouped by those categories.")
+        XCTAssertEqual(sections[safe: 0]?.category, "pastas")
+        XCTAssertEqual(sections[safe: 1]?.category, "drinks")
+        XCTAssertEqual(sections[safe: 2]?.category, "desserts")
+    }
 }

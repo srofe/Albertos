@@ -17,6 +17,7 @@
 		F41C402926FB359B003A0DFA /* MenuGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402826FB359B003A0DFA /* MenuGrouping.swift */; };
 		F41C402C26FC6477003A0DFA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402B26FC6477003A0DFA /* MenuItem.swift */; };
 		F41C402E26FC64EE003A0DFA /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402D26FC64EE003A0DFA /* MenuSection.swift */; };
+		F41C403026FEF2EF003A0DFA /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F41C402A26FBC89B003A0DFA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F41C402B26FC6477003A0DFA /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		F41C402D26FC64EE003A0DFA /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F41C3FFE26FB2FAA003A0DFA /* AlbertosApp.swift */,
+				F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */,
 				F41C400026FB2FAA003A0DFA /* ContentView.swift */,
 				F41C402826FB359B003A0DFA /* MenuGrouping.swift */,
 				F41C402B26FC6477003A0DFA /* MenuItem.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41C403026FEF2EF003A0DFA /* Collection+Safe.swift in Sources */,
 				F41C402E26FC64EE003A0DFA /* MenuSection.swift in Sources */,
 				F41C400126FB2FAA003A0DFA /* ContentView.swift in Sources */,
 				F41C402C26FC6477003A0DFA /* MenuItem.swift in Sources */,
