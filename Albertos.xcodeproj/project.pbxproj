@@ -19,6 +19,7 @@
 		F41C402E26FC64EE003A0DFA /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402D26FC64EE003A0DFA /* MenuSection.swift */; };
 		F41C403026FEF2EF003A0DFA /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */; };
 		F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */; };
+		F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F41C402D26FC64EE003A0DFA /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 		F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				F41C400F26FB2FAC003A0DFA /* MenuGroupingTests.swift */,
 				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
+				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41C401026FB2FAC003A0DFA /* MenuGroupingTests.swift in Sources */,
+				F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */,
 				F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
