@@ -44,8 +44,8 @@ class MenuListViewModelTests: XCTestCase {
             .$sections
             .dropFirst()
             .sink { value in
-                XCTAssertEqual(receivedMenu, menu)
-                XCTAssertEqual(value, expectedSections)
+                XCTAssertEqual(receivedMenu, menu, "When menu fetching is successful, the grouping closure shall be called with the received menu.")
+                XCTAssertEqual(value, expectedSections, "When menu fetching is successful, the grouping closure shall return the grouped sections.")
                 expectation.fulfill()
             }
             .store(in: &cancellables)
