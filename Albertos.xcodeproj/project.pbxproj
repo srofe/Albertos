@@ -23,6 +23,8 @@
 		F42B59FA270D804C005812D7 /* MenuRow.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B59F9270D804C005812D7 /* MenuRow.ViewModel.swift */; };
 		F42B59FE270DC80F005812D7 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B59FD270DC80F005812D7 /* MenuListViewModelTests.swift */; };
 		F42B5A00270DCA02005812D7 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B59FF270DCA02005812D7 /* MenuList.ViewModel.swift */; };
+		F42B5A02270DD99A005812D7 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A01270DD99A005812D7 /* MenuFetching.swift */; };
+		F42B5A04270DDB7F005812D7 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */; };
 		F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */; };
 		F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		F42B59F9270D804C005812D7 /* MenuRow.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.ViewModel.swift; sourceTree = "<group>"; };
 		F42B59FD270DC80F005812D7 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
 		F42B59FF270DCA02005812D7 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
+		F42B5A01270DD99A005812D7 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 		F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +128,8 @@
 				F42B59F5270D7DF7005812D7 /* MenuRow.swift */,
 				F42B59F9270D804C005812D7 /* MenuRow.ViewModel.swift */,
 				F41C402826FB359B003A0DFA /* MenuGrouping.swift */,
+				F42B5A01270DD99A005812D7 /* MenuFetching.swift */,
+				F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */,
 				F41C402B26FC6477003A0DFA /* MenuItem.swift */,
 				F41C402D26FC64EE003A0DFA /* MenuSection.swift */,
 				F41C402A26FBC89B003A0DFA /* README.md */,
@@ -294,6 +300,8 @@
 			files = (
 				F41C403026FEF2EF003A0DFA /* Collection+Safe.swift in Sources */,
 				F42B59FA270D804C005812D7 /* MenuRow.ViewModel.swift in Sources */,
+				F42B5A04270DDB7F005812D7 /* MenuFetchingPlaceholder.swift in Sources */,
+				F42B5A02270DD99A005812D7 /* MenuFetching.swift in Sources */,
 				F42B59F6270D7DF7005812D7 /* MenuRow.swift in Sources */,
 				F42B5A00270DCA02005812D7 /* MenuList.ViewModel.swift in Sources */,
 				F41C402E26FC64EE003A0DFA /* MenuSection.swift in Sources */,

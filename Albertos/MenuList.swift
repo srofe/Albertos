@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuList: View {
-    let viewModel: ViewModel
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         List {
@@ -25,6 +25,6 @@ struct MenuList: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuList(viewModel: MenuList.ViewModel(menu: menu))
+        MenuList(viewModel: MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder()))
     }
 }

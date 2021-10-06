@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 
 extension MenuList {
-    struct ViewModel {
-        let sections: [MenuSection]
+    class ViewModel: ObservableObject {
+        @Published private(set) var sections: [MenuSection]
+        private var cancellables = Set<AnyCancellable>()
 
         init(
-            menu: [MenuItem],
+            menuFetching: MenuFetching,
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
         ) {
-            self.sections = menuGrouping(menu)
+            sections = []
+            menuFetching
+                .fetchMenu()
+                .sink(receiveCompletion: { _ in },
+                      receiveValue: { [weak self] value in
+                    self?.sections = menuGrouping(value)
+                })
+                .store(in: &cancellables)
         }
     }
 }
