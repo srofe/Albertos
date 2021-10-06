@@ -19,7 +19,7 @@ class MenuListViewModelTests: XCTestCase {
         }
         let viewModel = MenuList.ViewModel(menu: [.fixture()], menuGrouping: spyClosure)
         let sections = viewModel.sections
-        XCTAssertTrue(called)
-        XCTAssertEqual(sections, inputSections)
+        XCTAssertTrue(called, "Instantiating a MenuList.ViewModel shall call the closure passed to it.")
+        XCTAssertEqual(sections, inputSections, "Instantiating a MenuList.ViewModel shall set the sections property created by the closure.")
     }
 }
