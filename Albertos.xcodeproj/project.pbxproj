@@ -101,6 +101,7 @@
 		F41C3FF226FB2FAA003A0DFA = {
 			isa = PBXGroup;
 			children = (
+				F41C402A26FBC89B003A0DFA /* README.md */,
 				F41C3FFD26FB2FAA003A0DFA /* Albertos */,
 				F41C400E26FB2FAC003A0DFA /* AlbertosTests */,
 				F41C401826FB2FAC003A0DFA /* AlbertosUITests */,
@@ -128,7 +129,6 @@
 				F47774C0270E49DD00A985F7 /* Helpers */,
 				F47774BF270E49C200A985F7 /* Extensions */,
 				F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */,
-				F41C402A26FBC89B003A0DFA /* README.md */,
 				F41C400226FB2FAB003A0DFA /* Assets.xcassets */,
 				F41C400426FB2FAB003A0DFA /* Preview Content */,
 			);
