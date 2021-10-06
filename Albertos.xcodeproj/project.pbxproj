@@ -149,8 +149,7 @@
 				F41C400F26FB2FAC003A0DFA /* MenuGroupingTests.swift */,
 				F42B59F7270D7F4E005812D7 /* MenuRowViewModelTests.swift */,
 				F42B59FD270DC80F005812D7 /* MenuListViewModelTests.swift */,
-				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
-				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
+				F47774C1270E4CB900A985F7 /* Fixtures */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -206,6 +205,15 @@
 				F42B5A01270DD99A005812D7 /* MenuFetching.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F47774C1270E4CB900A985F7 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
+				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
