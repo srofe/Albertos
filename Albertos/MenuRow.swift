@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct MenuRow: View {
-    let item: MenuItem
+    let viewModel: ViewModel
 
     var body: some View {
-        Text(item.name)
+        Text(viewModel.text)
     }
 }
 
 struct MenuRow_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRow(item: MenuItem(category: "pastas", name: "Spaghetti Carbonara", spicy: false, price: 28.0))
+        MenuRow(viewModel: MenuRow.ViewModel(item: menu.first!))
             .previewLayout(.sizeThatFits)
             .padding()
     }
