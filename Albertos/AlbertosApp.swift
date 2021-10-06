@@ -12,7 +12,7 @@ struct AlbertosApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MenuList(sections: groupMenuByCategory(menu))
+                MenuList(viewModel: MenuList.ViewModel(menu: menu))
                     .navigationTitle("Alberto's 🇮🇹")
             }
         }
