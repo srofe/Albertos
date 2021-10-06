@@ -15,7 +15,7 @@ extension MenuList {
             menu: [MenuItem],
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
         ) {
-            self.sections = menuGrouping(menu)
+            self.sections = menuGrouping([])
         }
     }
 }

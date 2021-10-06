@@ -22,4 +22,9 @@ class MenuListViewModelTests: XCTestCase {
         XCTAssertTrue(called, "Instantiating a MenuList.ViewModel shall call the closure passed to it.")
         XCTAssertEqual(sections, inputSections, "Instantiating a MenuList.ViewModel shall set the sections property created by the closure.")
     }
+
+    func test_WhenFetchingStarts_PublishersEmptyMenu() {
+        let viewModel = MenuList.ViewModel(menu: [.fixture()])
+        XCTAssertTrue(viewModel.sections.isEmpty, "When menu fetching starts the view model shall publish an empty array of sections.")
+    }
 }
