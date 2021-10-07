@@ -26,6 +26,8 @@
 		F42B5A02270DD99A005812D7 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A01270DD99A005812D7 /* MenuFetching.swift */; };
 		F42B5A04270DDB7F005812D7 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */; };
 		F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */; };
+		F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47774C2270E964800A985F7 /* MenuFetchingStub.swift */; };
+		F47774C5270EAE7700A985F7 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47774C4270EAE7700A985F7 /* TestError.swift */; };
 		F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		F42B5A01270DD99A005812D7 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		F47774C2270E964800A985F7 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		F47774C4270EAE7700A985F7 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 		F41C3FF226FB2FAA003A0DFA = {
 			isa = PBXGroup;
 			children = (
+				F41C402A26FBC89B003A0DFA /* README.md */,
 				F41C3FFD26FB2FAA003A0DFA /* Albertos */,
 				F41C400E26FB2FAC003A0DFA /* AlbertosTests */,
 				F41C401826FB2FAC003A0DFA /* AlbertosUITests */,
@@ -122,17 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				F41C3FFE26FB2FAA003A0DFA /* AlbertosApp.swift */,
-				F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */,
-				F41C400026FB2FAA003A0DFA /* MenuList.swift */,
-				F42B59FF270DCA02005812D7 /* MenuList.ViewModel.swift */,
-				F42B59F5270D7DF7005812D7 /* MenuRow.swift */,
-				F42B59F9270D804C005812D7 /* MenuRow.ViewModel.swift */,
-				F41C402826FB359B003A0DFA /* MenuGrouping.swift */,
-				F42B5A01270DD99A005812D7 /* MenuFetching.swift */,
+				F47774BC270E497B00A985F7 /* Views */,
+				F47774BD270E498A00A985F7 /* ViewModels */,
+				F47774BE270E49A300A985F7 /* Models */,
+				F47774C0270E49DD00A985F7 /* Helpers */,
+				F47774BF270E49C200A985F7 /* Extensions */,
 				F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */,
-				F41C402B26FC6477003A0DFA /* MenuItem.swift */,
-				F41C402D26FC64EE003A0DFA /* MenuSection.swift */,
-				F41C402A26FBC89B003A0DFA /* README.md */,
 				F41C400226FB2FAB003A0DFA /* Assets.xcassets */,
 				F41C400426FB2FAB003A0DFA /* Preview Content */,
 			);
@@ -153,8 +153,8 @@
 				F41C400F26FB2FAC003A0DFA /* MenuGroupingTests.swift */,
 				F42B59F7270D7F4E005812D7 /* MenuRowViewModelTests.swift */,
 				F42B59FD270DC80F005812D7 /* MenuListViewModelTests.swift */,
-				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
-				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
+				F47774C1270E4CB900A985F7 /* Fixtures */,
+				F47774C2270E964800A985F7 /* MenuFetchingStub.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -166,6 +166,60 @@
 				F41C401B26FB2FAC003A0DFA /* AlbertosUITestsLaunchTests.swift */,
 			);
 			path = AlbertosUITests;
+			sourceTree = "<group>";
+		};
+		F47774BC270E497B00A985F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41C400026FB2FAA003A0DFA /* MenuList.swift */,
+				F42B59F5270D7DF7005812D7 /* MenuRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F47774BD270E498A00A985F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F42B59FF270DCA02005812D7 /* MenuList.ViewModel.swift */,
+				F42B59F9270D804C005812D7 /* MenuRow.ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F47774BE270E49A300A985F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F41C402B26FC6477003A0DFA /* MenuItem.swift */,
+				F41C402D26FC64EE003A0DFA /* MenuSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F47774BF270E49C200A985F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F41C402F26FEF2EF003A0DFA /* Collection+Safe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F47774C0270E49DD00A985F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F41C402826FB359B003A0DFA /* MenuGrouping.swift */,
+				F42B5A01270DD99A005812D7 /* MenuFetching.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F47774C1270E4CB900A985F7 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
+				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
+				F47774C4270EAE7700A985F7 /* TestError.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,8 +372,10 @@
 			files = (
 				F41C401026FB2FAC003A0DFA /* MenuGroupingTests.swift in Sources */,
 				F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */,
+				F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */,
 				F42B59F8270D7F4E005812D7 /* MenuRowViewModelTests.swift in Sources */,
 				F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */,
+				F47774C5270EAE7700A985F7 /* TestError.swift in Sources */,
 				F42B59FE270DC80F005812D7 /* MenuListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
