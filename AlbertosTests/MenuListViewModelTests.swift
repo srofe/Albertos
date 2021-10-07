@@ -23,12 +23,13 @@ class MenuListViewModelTests: XCTestCase {
         let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(), menuGrouping: spyClosure)
         let sections = viewModel.sections
         XCTAssertTrue(called, "Instantiating a MenuList.ViewModel shall call the closure passed to it.")
-        XCTAssertEqual(sections, inputSections, "Instantiating a MenuList.ViewModel shall set the sections property created by the closure.")
+        XCTAssertEqual(try sections.get(), inputSections, "Instantiating a MenuList.ViewModel shall set the sections property created by the closure.")
     }
 
-    func test_WhenFetchingStarts_PublishersEmptyMenu() {
-        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder())
-        XCTAssertTrue(viewModel.sections.isEmpty, "When menu fetching starts the view model shall publish an empty array of sections.")
+    func test_WhenFetchingStarts_PublishersEmptyMenu() throws {
+        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingStub(returning: .success([.fixture()])))
+        let sections = try viewModel.sections.get()
+        XCTAssertTrue(sections.isEmpty, "When menu fetching starts the view model shall publish an empty array of sections.")
     }
 
     func test_WhenFetchingSucceeds_PublishesSectionsBuiltFromReceivedMenuAndGroupingClosure() {
@@ -46,8 +47,11 @@ class MenuListViewModelTests: XCTestCase {
             .$sections
             .dropFirst()
             .sink { value in
+                guard case .success(let sections) = value else {
+                    return XCTFail("Expected a successful Result, got \(value).")
+                }
                 XCTAssertEqual(receivedMenu, expectedMenu, "When menu fetching is successful, the grouping closure shall be called with the received menu.")
-                XCTAssertEqual(value, expectedSections, "When menu fetching is successful, the grouping closure shall return the grouped sections.")
+                XCTAssertEqual(sections, expectedSections, "When menu fetching is successful, the grouping closure shall return the grouped sections.")
                 expectation.fulfill()
             }
             .store(in: &cancellables)

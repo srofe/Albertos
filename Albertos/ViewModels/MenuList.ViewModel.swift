@@ -10,19 +10,18 @@ import Combine
 
 extension MenuList {
     class ViewModel: ObservableObject {
-        @Published private(set) var sections: [MenuSection]
+        @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
         private var cancellables = Set<AnyCancellable>()
 
         init(
             menuFetching: MenuFetching,
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
         ) {
-            sections = []
             menuFetching
                 .fetchMenu()
                 .sink(receiveCompletion: { _ in },
                       receiveValue: { [weak self] value in
-                    self?.sections = menuGrouping(value)
+                    self?.sections = .success(menuGrouping(value))
                 })
                 .store(in: &cancellables)
         }
