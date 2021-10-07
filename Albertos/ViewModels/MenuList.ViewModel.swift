@@ -19,13 +19,14 @@ extension MenuList {
         ) {
             menuFetching
                 .fetchMenu()
+                .map(menuGrouping)
                 .sink(
                     receiveCompletion: { [weak self] completion in
                         guard case .failure(let error) = completion else { return }
                         self?.sections = .failure(error)
                     },
                     receiveValue: { [weak self] value in
-                        self?.sections = .success(menuGrouping(value))
+                        self?.sections = .success(value)
                     })
                 .store(in: &cancellables)
         }
