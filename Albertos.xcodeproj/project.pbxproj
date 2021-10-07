@@ -26,6 +26,7 @@
 		F42B5A02270DD99A005812D7 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A01270DD99A005812D7 /* MenuFetching.swift */; };
 		F42B5A04270DDB7F005812D7 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */; };
 		F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */; };
+		F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47774C2270E964800A985F7 /* MenuFetchingStub.swift */; };
 		F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F42B5A01270DD99A005812D7 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		F47774C2270E964800A985F7 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
 		F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				F42B59F7270D7F4E005812D7 /* MenuRowViewModelTests.swift */,
 				F42B59FD270DC80F005812D7 /* MenuListViewModelTests.swift */,
 				F47774C1270E4CB900A985F7 /* Fixtures */,
+				F47774C2270E964800A985F7 /* MenuFetchingStub.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			files = (
 				F41C401026FB2FAC003A0DFA /* MenuGroupingTests.swift in Sources */,
 				F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */,
+				F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */,
 				F42B59F8270D7F4E005812D7 /* MenuRowViewModelTests.swift in Sources */,
 				F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */,
 				F42B59FE270DC80F005812D7 /* MenuListViewModelTests.swift in Sources */,

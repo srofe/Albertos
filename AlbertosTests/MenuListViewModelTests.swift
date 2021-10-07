@@ -34,17 +34,19 @@ class MenuListViewModelTests: XCTestCase {
     func test_WhenFetchingSucceeds_PublishesSectionsBuiltFromReceivedMenuAndGroupingClosure() {
         var receivedMenu: [MenuItem]?
         let expectedSections = [MenuSection.fixture()]
+        let expectedMenu = [MenuItem.fixture()]
         let spyClosure: ([MenuItem]) -> [MenuSection] = { items in
             receivedMenu = items
             return expectedSections
         }
-        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(), menuGrouping: spyClosure)
+        let menuFetchingStub = MenuFetchingStub(returning: .success(expectedMenu))
+        let viewModel = MenuList.ViewModel(menuFetching: menuFetchingStub, menuGrouping: spyClosure)
         let expectation = XCTestExpectation(description: "Publishes sections built from received menu and given grouping closure.")
         viewModel
             .$sections
             .dropFirst()
             .sink { value in
-                XCTAssertEqual(receivedMenu, menu, "When menu fetching is successful, the grouping closure shall be called with the received menu.")
+                XCTAssertEqual(receivedMenu, expectedMenu, "When menu fetching is successful, the grouping closure shall be called with the received menu.")
                 XCTAssertEqual(value, expectedSections, "When menu fetching is successful, the grouping closure shall return the grouped sections.")
                 expectation.fulfill()
             }
