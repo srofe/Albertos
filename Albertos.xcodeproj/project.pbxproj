@@ -27,6 +27,7 @@
 		F42B5A04270DDB7F005812D7 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */; };
 		F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */; };
 		F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47774C2270E964800A985F7 /* MenuFetchingStub.swift */; };
+		F47774C5270EAE7700A985F7 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47774C4270EAE7700A985F7 /* TestError.swift */; };
 		F4F95344270D26FD007DEDA0 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		F42B5A03270DDB7F005812D7 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 		F47774C2270E964800A985F7 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		F47774C4270EAE7700A985F7 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +217,7 @@
 			children = (
 				F446954426FF2CA9000ABE3C /* MenuItem+Fixture.swift */,
 				F4F95343270D26FD007DEDA0 /* MenuSection+Fixture.swift */,
+				F47774C4270EAE7700A985F7 /* TestError.swift */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				F47774C3270E964800A985F7 /* MenuFetchingStub.swift in Sources */,
 				F42B59F8270D7F4E005812D7 /* MenuRowViewModelTests.swift in Sources */,
 				F446954526FF2CA9000ABE3C /* MenuItem+Fixture.swift in Sources */,
+				F47774C5270EAE7700A985F7 /* TestError.swift in Sources */,
 				F42B59FE270DC80F005812D7 /* MenuListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
