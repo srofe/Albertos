@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F4087D0B270F878E00EAE7EF /* MenuItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4087D0A270F878E00EAE7EF /* MenuItemTests.swift */; };
+		F4087D0D2710290400EAE7EF /* menu_item.json in Resources */ = {isa = PBXBuildFile; fileRef = F4087D0C2710290400EAE7EF /* menu_item.json */; };
 		F41C3FFF26FB2FAA003A0DFA /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C3FFE26FB2FAA003A0DFA /* AlbertosApp.swift */; };
 		F41C400126FB2FAA003A0DFA /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C400026FB2FAA003A0DFA /* MenuList.swift */; };
 		F41C400326FB2FAB003A0DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41C400226FB2FAB003A0DFA /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		F4087D0A270F878E00EAE7EF /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
+		F4087D0C2710290400EAE7EF /* menu_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu_item.json; sourceTree = "<group>"; };
 		F41C3FFB26FB2FAA003A0DFA /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41C3FFE26FB2FAA003A0DFA /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
 		F41C400026FB2FAA003A0DFA /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				F47774C1270E4CB900A985F7 /* Fixtures */,
 				F47774C2270E964800A985F7 /* MenuFetchingStub.swift */,
 				F4087D0A270F878E00EAE7EF /* MenuItemTests.swift */,
+				F4087D0C2710290400EAE7EF /* menu_item.json */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4087D0D2710290400EAE7EF /* menu_item.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
